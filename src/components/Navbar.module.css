@@ -1,0 +1,82 @@
+.navbar {
+  
+}
+
+.navbar__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1160px;
+  margin: 0 auto;
+  
+}
+
+.navbar__list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  color: var(--nav-color-text);
+  gap: 26px;
+}
+
+.navbar__list_item {
+  display: flex;
+  transition: 0.3s all;
+  cursor: pointer;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.navbar__list_item img{
+  width: 130px;
+}
+
+.navbar__list_item:last-child,
+.navbar__list_item:first-child{
+  align-items: center;
+}
+
+.navbar__list_item:hover,
+.navbar__list_item:hover path {
+  stroke: var(--icon-svg-hover);
+  color: var(--nav-color-text-hover);
+}
+
+.navbar__profile{
+  display: flex;
+  align-items: center;
+}
+
+.navbar__lang{
+}
+
+.navbar__lang_text{
+  display: flex;
+  align-items: center;
+  color: var(--color-text);
+  gap: 6px;
+  padding-right: 30px;
+  cursor: pointer;
+}
+
+.navbar__lang_text::before{
+  display: block;
+  content: '';
+  width: 20px;
+  height: 16px;
+  background-image: url('../assets/svg/ru-flag.svg');
+}
+
+.navbar__lang_text::after{
+  
+  display: block;
+  content: '';
+  background-image: url('../assets/svg/arrow.svg');
+  width: 12px;
+  height: 8px;
+}
+
+.navbar__user img{
+  width: 40px;
+  height: 40px;
+}
