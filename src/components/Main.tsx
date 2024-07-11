@@ -1,4 +1,4 @@
-import { Box, ImageList, ImageListItem } from "@mui/material";
+import { ImageList, ImageListItem } from "@mui/material";
 import img_1 from "../assets/img/main/img-1.jpg";
 import img_2 from "../assets/img/main/img-2.jpg";
 import img_3 from "../assets/img/main/img-3.jpg";
