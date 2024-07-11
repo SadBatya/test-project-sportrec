@@ -1,14 +1,16 @@
-.navbar {
-  
+.navbar{
+  background-color: var(--navbar-bg-color);
+  height: 64px;
+  display: flex;
+  align-items: center;
 }
 
 .navbar__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1160px;
+  width: 1160px;
   margin: 0 auto;
-  
 }
 
 .navbar__list {
@@ -47,9 +49,6 @@
   align-items: center;
 }
 
-.navbar__lang{
-}
-
 .navbar__lang_text{
   display: flex;
   align-items: center;
@@ -68,7 +67,6 @@
 }
 
 .navbar__lang_text::after{
-  
   display: block;
   content: '';
   background-image: url('../assets/svg/arrow.svg');

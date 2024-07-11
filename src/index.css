@@ -1,10 +1,17 @@
 :root {
   --nav-color-text: rgb(147, 149, 184);
   --nav-color-text-hover: rgb(6, 8, 44);
-  --color-text:(6, 8, 44);
-  --icon-svg-hover: #06082C;
+  --color-text-blue: rgb(6, 8, 44);
+  --color-text-white: #ffff;
+  --body-bg-color: #eef0f7;
+  --icon-svg-hover: #06082c;
+  --navbar-bg-color: #ffff;
+  --live-icon-bg-color:#FF2410;
+  --dote-color-active:#353754;
+  --dote-color-notactive: #CCCFDA;
 }
 
 body {
+  background-color: var(--body-bg-color);
   font-family: Inter, sans-serif;
 }

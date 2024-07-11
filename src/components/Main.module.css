@@ -1,0 +1,39 @@
+.main__container{}
+
+.main__text{
+  color: var(--nav-color-text);
+  font-size: 12px;
+}
+
+.main__text_title{}
+
+.main__text_subtitle{}
+
+.main__post_info{
+  display: flex;
+  gap: 20px;
+}
+
+.main__post_views,
+.main__post_comments{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.main__post_views::before{
+  display: block;
+  content: '';
+  width: 20px;
+  height: 14px;
+  background-image: url('../assets/svg/main/main_icon-view.svg');
+}
+
+.main__post_comments::before{
+  display: block;
+  content: '';
+  width: 18px;
+  height: 18px;
+  background-image: url('../assets/svg/main/main_icon-comment.svg');
+}
+

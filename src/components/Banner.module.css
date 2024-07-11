@@ -1,0 +1,113 @@
+.banner {
+  background-image: url("../assets/img/banner_img-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  color: var(--color-text-white);
+  padding: 35px 0;
+  position: relative;
+  gap: 16px;
+  border-radius: 16px;
+  margin-top: 24px;
+}
+
+.banner__live_icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: clamp(12px, 2vw, 16px);
+  margin: 0 auto;
+  padding: 12px;
+  background-color: var(--live-icon-bg-color);
+  font-weight: 700;
+  border-radius: 11px;
+}
+
+.banner__players {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner__type_sport {
+  font-size: clamp(30px, 3vw, 54px);
+  max-width: 510px;
+  margin: 0 auto;
+  font-weight: 600;
+  text-align: center;
+}
+
+.banner__player_1,
+.banner__player_2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.banner__player_2 {
+  flex-direction: row-reverse;
+}
+
+.banner__player_1::before {
+  content: "";
+  width: 34px;
+  height: 24px;
+  display: block;
+  background-image: url("../assets/svg/kz_flag.svg");
+}
+
+.banner__player_2::before {
+  content: "";
+  width: 34px;
+  height: 24px;
+  display: block;
+  background-image: url("../assets/svg/ru-flag-2.svg");
+}
+
+.banner__btn {
+  width: 198px;
+  background-color: #eef0f7;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  margin: 0 auto;
+}
+
+.banner__live_btn {
+  cursor: pointer;
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-image: url("../assets/svg/banner_icon-btn.svg");
+  position: absolute;
+  top: 17px;
+  right: 17px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.banner__dots {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.banner__dot_active,
+.banner__dot_notactive {
+  cursor: pointer;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: var(--dote-color-active);
+  border-radius: 50%;
+}
+
+.banner__dot_notactive {
+  background-color: var(--dote-color-notactive);
+}
